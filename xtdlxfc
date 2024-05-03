@@ -1,0 +1,2824 @@
+（1）港珠澳大桥决策阶段
+(01)    "CCO1R1-EC1R2"=
+        0.108
+    Units: Dmnl/Month
+    
+(02)    "CCO1R1-ECIR3"=
+        0.09
+    Units: Dmnl/Month
+    
+(03)    "CCO1R1-EN1R1"=
+        0.153
+    Units: Dmnl/Month
+    
+(04)    "CCO1R2-SO1R4"=
+        0.131
+    Units: Dmnl/Month
+    
+(05)    "CCO1R3-CO1R2"=
+        0.171
+    Units: Dmnl/Month
+    
+(06)    "CCO1R3-SO1R3"=
+        0.103
+    Units: Dmnl/Month
+    
+(07)    "CEC1R1-SO1R1"=
+        0.13
+    Units: Dmnl/Month
+    
+(08)    "CEC1R1-SO1R2"=
+        0.114
+    Units: Dmnl/Month
+    
+(09)    "CEC1R1-SO1R5"=
+        0.123
+    Units: Dmnl/Month
+    
+(10)    "CEC1R2-EC1R3"=
+        0.213
+    Units: Dmnl/Month
+    
+(11)    "CEC1R4-SO1R1"=
+        0.12
+    Units: Dmnl/Month
+    
+(12)    "CEC1R4-SO1R2"=
+        0.141
+    Units: Dmnl/Month
+    
+(13)    "CEC1R4-SO1R7"=
+        0.157
+    Units: Dmnl/Month
+    
+(14)    "CEC1R5-CO1RI"=
+        0.122
+    Units: Dmnl/Month
+    
+(15)    "CEC1R5-EN1R1"=
+        0.142
+    Units: Dmnl/Month
+    
+(16)    "CEC1R5-SOIR7"=
+        0.136
+    Units: Dmnl/Month
+    
+(17)    "CEC1R6-EC1R1"=
+        0.154
+    Units: Dmnl/Month
+    
+(18)    "CEC1R6-SO1R1"=
+        0.102
+    Units: Dmnl/Month
+    
+(19)    "CEN1R1-SO1R2"=
+        0.08
+    Units: Dmnl/Month
+    
+(20)    "CSO1R1-CO1R2"=
+        0.121
+    Units: Dmnl/Month
+    
+(21)    "CSO1R1-CO1R3"=
+        0.122
+    Units: Dmnl/Month
+    
+(22)    "CSO1R2-CO1R2"=
+        0.141
+    Units: Dmnl/Month
+    
+(23)    "CSO1R2-CO1R3"=
+        0.114
+    Units: Dmnl/Month
+    
+(24)    "CSO1R2-SO1R3"=
+        0.137
+    Units: Dmnl/Month
+    
+(25)    "CSO1R3-CO1R2"=
+        0.146
+    Units: Dmnl/Month
+    
+(26)    "CSO1R4-CO1R1"=
+        0.07
+    Units: Dmnl/Month
+    
+(27)    "CSO1R4-EN1R1"=
+        0.082
+    Units: Dmnl/Month
+    
+(28)    "CSO1R4-SO1R1"=
+        0.12
+    Units: Dmnl/Month
+    
+(29)    "CSO1R4-SO1R2"=
+        0.105
+    Units: Dmnl/Month
+    
+(30)    "CSO1R5-CO1R2"=
+        0.092
+    Units: Dmnl/Month
+    
+(31)    "CSO1R5-CO1R3"=
+        0.093
+    Units: Dmnl/Month
+    
+(32)    "CSO1R5-EN1R1"=
+        0.104
+    Units: Dmnl/Month
+    
+(33)    "CSO1R5-SO1R1"=
+        0.076
+    Units: Dmnl/Month
+    
+(34)    "CSO1R5-SO1R2"=
+        0.059
+    Units: Dmnl/Month
+    
+(35)    "CSO1R6-EC1R6"=
+        0.114
+    Units: Dmnl/Month
+    
+(36)    "CSO1R7-EC1R2"=
+        0.102
+    Units: Dmnl/Month
+    
+(37)    "CSO1R7-EC1R3"=
+        0.085
+    Units: Dmnl/Month
+    
+(38)    "CSO1R7-EN1R1"=
+        0.108
+    Units: Dmnl/Month
+    
+(39)    "CSO1R7-SO1R1"=
+        0.106
+    Units: Dmnl/Month
+    
+(40)    "CSO1R7-SO1R2"=
+        0.123
+    Units: Dmnl/Month
+    
+(41)    "CSO1R7-SO1R6"=
+        0.181
+    Units: Dmnl/Month
+    
+(42)    FINAL TIME=
+        72
+    Units: Month
+    The final time for the simulation.
+
+(43)    INITIAL TIME  = 0
+    Units: Month
+    The initial time for the simulation.
+
+(44)    RCO1R=
+        SMOOTH(DELAY3((不满足国家或地方可持续发展政策法律LCO1R1+
+    决策流程不完善LCO1R3+缺乏所有利益相关者参与决策机制LCO1R2
+    )/3,3),3)
+    Units: Dmnl/Month
+    
+(45)    RCO1R1=
+        对当地产业空间布局不利影响LEC1R3*"CCO1R1-ECIR3"+对当地产业结构不利影响LEC1R2
+    *"CCO1R1-EC1R2"+环境影响评估不足LEN1R1
+        *"CCO1R1-EN1R1"
+    Units: Dmnl/Month
+    
+(46)    RCO1R2=
+        贿赂和腐败LSO1R4*"CCO1R2-SO1R4"
+    Units: Dmnl/Month
+    
+(47)    RCO1R3=
+        缺乏所有利益相关者参与决策机制LCO1R2*"CCO1R3-CO1R2"+过度行政干预LSO1R3
+    *"CCO1R3-SO1R3"
+    Units: Dmnl/Month
+    
+(48)    REC1R=
+        SMOOTH(DELAY3((因和社区纠纷而产生费用LEC1R4+对当地产业空间布局不利影响LEC1R3
+    +对当地产业结构不利影响LEC1R2+延迟获得批准LEC1R5+技术可行性决策失误LEC1R6
+    +需求预测错误LEC1R1)/6,3),6)
+    Units: Dmnl/Month
+    
+(49)    REC1R1=
+        "CEC1R1-SO1R1"*项目信息不透明LSO1R1+"CEC1R1-SO1R2"*公众和当地社区参与受阻LSO1R2
+    +"CEC1R1-SO1R5"*机会主义决策LSO1R5
+    Units: Dmnl/Month
+    
+(50)    REC1R2=
+        "CEC1R2-EC1R3"*对当地产业空间布局不利影响LEC1R3
+    Units: Dmnl/Month
+    
+(51)    REC1R4=
+        "CEC1R4-SO1R1"*项目信息不透明LSO1R1+"CEC1R4-SO1R7"
+        *政府与公众发生冲突LSO1R7+"CEC1R4-SO1R2"*公众和当地社区参与受阻LSO1R2
+    Units: Dmnl/Month
+    
+(52)    REC1R5=
+        "CEC1R5-CO1RI"*不满足国家或地方可持续发展政策法律LCO1R1+
+    "CEC1R5-SOIR7"*政府与公众发生冲突LSO1R7+"CEC1R5-EN1R1"*环境影响评估不足LEN1R1
+    Units: Dmnl/Month
+    
+(53)    REC1R6=
+        需求预测错误LEC1R1*"CEC1R6-EC1R1"+项目信息不透明LSO1R1*"CEC1R6-SO1R1"
+    Units: Dmnl/Month
+    
+(54)    REN1R=
+        SMOOTH(DELAY3(环境影响评估不足LEN1R1,3),1)
+    Units: Dmnl/Month
+    
+(55)    REN1R1=
+        "CEN1R1-SO1R2"*公众和当地社区参与受阻LSO1R2
+    Units: Dmnl/Month
+    
+(56)    RSO1R=
+        SMOOTH(DELAY3((公众和当地社区参与受阻LSO1R2+政府与公众发生冲突LSO1R7
+    +机会主义决策LSO1R5+规划造成了社区联系割裂LSO1R6+贿赂和腐败LSO1R4
+    +过度行政干预LSO1R3+项目信息不透明LSO1R1)/7,3),7)
+    Units: Dmnl/Month
+    
+(57)    RSO1R1=
+        决策流程不完善LCO1R3*"CSO1R1-CO1R3"+缺乏所有利益相关者参与决策机制LCO1R2
+    *"CSO1R1-CO1R2"
+    Units: Dmnl/Month
+    
+(58)    RSO1R2=
+        "CSO1R2-CO1R2"*缺乏所有利益相关者参与决策机制LCO1R2+"CSO1R2-CO1R3"
+    *决策流程不完善LCO1R3+"CSO1R2-SO1R3"
+        *过度行政干预LSO1R3
+    Units: Dmnl/Month
+    
+(59)    RSO1R3=
+        "CSO1R3-CO1R2"*缺乏所有利益相关者参与决策机制LCO1R2
+    Units: Dmnl/Month
+    
+(60)    RSO1R4=
+        不满足国家或地方可持续发展政策法律LCO1R1*"CSO1R4-CO1R1"+
+    公众和当地社区参与受阻LSO1R2*"CSO1R4-SO1R2"+环境影响评估不足LEN1R1
+    *"CSO1R4-EN1R1"+项目信息不透明LSO1R1*"CSO1R4-SO1R1"
+    Units: Dmnl/Month
+    
+(61)    RSO1R5=
+        公众和当地社区参与受阻LSO1R2*"CSO1R5-SO1R2"+决策流程不完善LCO1R3
+    *"CSO1R5-CO1R3"+环境影响评估不足LEN1R1*"CSO1R5-EN1R1"+缺乏所有利益相关者参与决策机制LCO1R2
+    *"CSO1R5-CO1R2"+项目信息不透明LSO1R1*"CSO1R5-SO1R1"
+    Units: Dmnl/Month
+    
+(62)    RSO1R6=
+        "CSO1R6-EC1R6"*技术可行性决策失误LEC1R6
+    Units: Dmnl/Month
+    
+(63)    RSO1R7=
+        公众和当地社区参与受阻LSO1R2*"CSO1R7-SO1R2"+对当地产业空间布局不利影响LEC1R3
+    *"CSO1R7-EC1R3"+对当地产业结构不利影响LEC1R2
+        *"CSO1R7-EC1R2"+环境影响评估不足LEN1R1*"CSO1R7-EN1R1"+规划造成了社区联系割裂LSO1R6
+    *"CSO1R7-SO1R6"+项目信息不透明LSO1R1
+        *"CSO1R7-SO1R1"
+    Units: Dmnl/Month
+    
+(64)    SAVEPER  = 
+            TIME STEP
+    Units: Month [0,?]
+    The frequency with which output is stored.
+
+(65)    TIME STEP  = 1
+    Units: Month [0,?]
+    The time step for the simulation.
+
+(66)    不满足国家或地方可持续发展政策法律LCO1R1= INTEG (
+        RCO1R1,
+            1.35 
+            )
+    Units: Dmnl
+    
+(67)    公众和当地社区参与受阻LSO1R2= INTEG (
+        RSO1R2,
+            0.95 
+            )
+    Units: Dmnl
+    
+(68)    决策流程不完善LCO1R3= INTEG (
+        RCO1R3,
+            0.97 
+            )
+    Units: Dmnl
+    
+(69)    协调风险LCO1R= INTEG (
+        SMOOTH(RCO1R , 3),
+            0)
+    Units: Dmnl
+    
+(70)    可持续视角下项目决策阶段整体风险LSD1=
+        0.25*协调风险LCO1R+0.25*环境风险LEN1R+0.25*社会风险LSO1R+0.25
+    *经济风险LEC1R
+    Units: Dmnl
+    
+(71)    因和社区纠纷而产生费用LEC1R4= INTEG (
+        REC1R4,
+            1.6 
+            )
+    Units: Dmnl
+    
+(72)    对当地产业空间布局不利影响LEC1R3=
+        1.33
+    Units: Dmnl
+    
+(73)    对当地产业结构不利影响LEC1R2= INTEG (
+        REC1R2,
+            1.45 
+            )
+    Units: Dmnl
+    
+(74)    延迟获得批准LEC1R5= INTEG (
+        REC1R5,
+            1.14 
+            )
+    Units: Dmnl
+    
+(75)    技术可行性决策失误LEC1R6= INTEG (
+        REC1R6,
+            2.28 
+            )
+    Units: Dmnl
+    
+(76)    政府与公众发生冲突LSO1R7= INTEG (
+        RSO1R7,
+            1.44 
+            )
+    Units: Dmnl
+    
+(77)    机会主义决策LSO1R5= INTEG (
+        RSO1R5,
+            1.02 
+            )
+    Units: Dmnl
+    
+(78)    环境影响评估不足LEN1R1= INTEG (
+        REN1R1,
+            1.8 
+            )
+    Units: Dmnl
+    
+(79)    环境风险LEN1R= INTEG (
+        SMOOTH(REN1R, 3),
+            0)
+    Units: Dmnl
+    
+(80)    社会风险LSO1R= INTEG (
+        SMOOTH(RSO1R,3),
+            0)
+    Units: Dmnl
+    
+(81)    经济风险LEC1R= INTEG (
+        SMOOTH(REC1R, 3),
+            0)
+    Units: Dmnl
+    
+(82)    缺乏所有利益相关者参与决策机制LCO1R2= INTEG (
+        RCO1R2,
+            0.86 
+            )
+    Units: Dmnl
+    
+(83)    规划造成了社区联系割裂LSO1R6= INTEG (
+        RSO1R6,
+            1.05 
+            )
+    Units: Dmnl
+    
+(84)    贿赂和腐败LSO1R4= INTEG (
+        RSO1R4,
+            0.86 
+            )
+    Units: Dmnl
+    
+(85)    过度行政干预LSO1R3= INTEG (
+        RSO1R3,
+            0.95 
+            )
+    Units: Dmnl
+    
+(86)    需求预测错误LEC1R1= INTEG (
+        REC1R1,
+            2.55 
+            )
+    Units: Dmnl
+    
+(87)    项目信息不透明LSO1R1= INTEG (
+        RSO1R1,
+            1.2 
+            )
+    Units: Dmnl
+    
+（2）港珠澳大桥设计阶段
+(001)    "CCO2R1-SO2R4"=
+        0.105
+    Units: Dmnl/Month
+    
+(002)    "CCO2R2-SO2R4"=
+        0.068
+    Units: Dmnl/Month
+    
+(003)    "CCO2R3-CO2R5"=
+        0.125
+    Units: Dmnl/Month
+    
+(004)    "CCO2R3-SO2R4"=
+        0.059
+    Units: Dmnl/Month
+    
+(005)    "CCO2R4-CO2R3"=
+        0.115
+    Units: Dmnl/Month
+    
+(006)    "CCO2R4-CO2R5"=
+        0.123
+    Units: Dmnl/Month
+    
+(007)    "CCO2R4-SO2R4"=
+        0.086
+    Units: Dmnl/Month
+    
+(008)    "CCO2R5-CO2R3"=
+        0.12
+    Units: Dmnl/Month
+    
+(009)    "CCO2R5-CO2R6"=
+        0.113
+    Units: Dmnl/Month
+    
+(010)    "CCO2R5-SO2R7"=
+        0.063
+    Units: Dmnl/Month
+    
+(011)    "CCO2R6-SO2R4"=
+        0.082
+    Units: Dmnl/Month
+    
+(012)    "CCO2R6-SO2R7"=
+        0.086
+    Units: Dmnl/Month
+    
+(013)    "CEC2R1-CO2R2"=
+        0.114
+    Units: Dmnl/Month
+    
+(014)    "CEC2R1-EC2R2"=
+        0.141
+    Units: Dmnl/Month
+    
+(015)    "CEC2R1-EC2R4"=
+        0.203
+    Units: Dmnl/Month
+    
+(016)    "CEC2R2-EC2R3"=
+        0.107
+    Units: Dmnl/Month
+    
+(017)    "CEC2R2-EC2R4"=
+        0.133
+    Units: Dmnl/Month
+    
+(018)    "CEC2R2-SO2R5"=
+        0.068
+    Units: Dmnl/Month
+    
+(019)    "CEC2R3-EN2R1"=
+        0.158
+    Units: Dmnl/Month
+    
+(020)    "CEC2R3-SO2R3"=
+        0.267
+    Units: Dmnl/Month
+    
+(021)    "CEC2R4-SO2R1"=
+        0.169
+    Units: Dmnl/Month
+    
+(022)    "CEC2R4-SO2R6"=
+        0.124
+    Units: Dmnl/Month
+    
+(023)    "CEC2R4-SO2R7"=
+        0.091
+    Units: Dmnl/Month
+    
+(024)    "CEC2R5-CO2R6"=
+        0.077
+    Units: Dmnl/Month
+    
+(025)    "CEC2R5-EC2R3"=
+        0.119
+    Units: Dmnl/Month
+    
+(026)    "CEC2R5-SO2R5"=
+        0.075
+    Units: Dmnl/Month
+    
+(027)    "CEC2R5-SO2R7"=
+        0.085
+    Units: Dmnl/Month
+    
+(028)    "CEN2R1-CO2R3"=
+        0.086
+    Units: Dmnl/Month
+    
+(029)    "CEN2R1-CO2R4"=
+        0.086
+    Units: Dmnl/Month
+    
+(030)    "CEN2R1-CO2R5"=
+        0.092
+    Units: Dmnl/Month
+    
+(031)    "CEN2R1-EC2R5"=
+        0.164
+    Units: Dmnl/Month
+    
+(032)    "CEN2R2-CO2R3"=
+        0.088
+    Units: Dmnl/Month
+    
+(033)    "CEN2R2-CO2R4"=
+        0.088
+    Units: Dmnl/Month
+    
+(034)    "CEN2R2-CO2R5"=
+        0.094
+    Units: Dmnl/Month
+    
+(035)    "CEN2R2-EC2R3"=
+        0.172
+    Units: Dmnl/Month
+    
+(036)    "CSO2R1-CO2R2"=
+        0.104
+    Units: Dmnl/Month
+    
+(037)    "CSO2R1-EC2R1"=
+        0.158
+    Units: Dmnl/Month
+    
+(038)    "CSO2R1-EC2R2"=
+        0.129
+    Units: Dmnl/Month
+    
+(039)    "CSO2R1-SO2R6"=
+        0.082
+    Units: Dmnl/Month
+    
+(040)    "CSO2R1-SO2R7"=
+        0.081
+    Units: Dmnl/Month
+    
+(041)    "CSO2R2-CO2R5"=
+        0.086
+    Units: Dmnl/Month
+    
+(042)    "CSO2R2-EC2R3"=
+        0.158
+    Units: Dmnl/Month
+    
+(043)    "CSO2R4-CO2R6"=
+        0.088
+    Units: Dmnl/Month
+    
+(044)    "CSO2R4-SO2R7"=
+        0.098
+    Units: Dmnl/Month
+    
+(045)    "CSO2R5-CO2R6"=
+        0.115
+    Units: Dmnl/Month
+    
+(046)    "CSO2R5-SO2R4"=
+        0.122
+    Units: Dmnl/Month
+    
+(047)    "CSO2R5-SO2R6"=
+        0.099
+    Units: Dmnl/Month
+    
+(048)    "CSO2R6-CO2R6"=
+        0.111
+    Units: Dmnl/Month
+    
+(049)    "CSO2R6-SO2R4"=
+        0.117
+    Units: Dmnl/Month
+    
+(050)    "CSO2R6-SO2R5"=
+        0.109
+    Units: Dmnl/Month
+    
+(051)    "CSO2R7-CO2R1"=
+        0.094
+    Units: Dmnl/Month
+    
+(052)    "CSO2R7-CO2R2"=
+        0.101
+    Units: Dmnl/Month
+    
+(053)    "CSO2R7-SO2R4"=
+        0.074
+    Units: Dmnl/Month
+    
+(054)    "CSO2R7-SO2R5"=
+        0.092
+    Units: Dmnl/Month
+    
+(055)    "CSO2R7-SO2R6"=
+        0.08
+    Units: Dmnl/Month
+    
+(056)    FINAL TIME=
+        12
+    Units: Month
+    The final time for the simulation.
+
+(057)    INITIAL TIME  = 0
+    Units: Month
+    The initial time for the simulation.
+
+(058)    RCO2R1=
+        "CCO2R1-SO2R4"*过度的行政干预LSO2R4
+    Units: Dmnl/Month
+    
+(059)    RCO2R2=
+        过度的行政干预LSO2R4*"CCO2R2-SO2R4"
+    Units: Dmnl/Month
+    
+(060)    RCO2R3=
+        缺少可持续文化建设LCO2R5*"CCO2R3-CO2R5"+过度的行政干预LSO2R4
+    *"CCO2R3-SO2R4"
+    Units: Dmnl/Month
+    
+(061)    RCO2R4=
+        合同缺少可持续发展相关条款LCO2R3*"CCO2R4-CO2R3"+缺少可持续文化建设LCO2R5
+    *"CCO2R4-CO2R5"+过度的行政干预LSO2R4*"CCO2R4-SO2R4"
+    Units: Dmnl/Month
+    
+(062)    RCO2R5=
+        合同缺少可持续发展相关条款LCO2R3*"CCO2R5-CO2R3"+组织沟通协调程序不完善LCO2R6
+    *"CCO2R5-CO2R6"+贿赂和腐败LSO2R7*"CCO2R5-SO2R7"
+    Units: Dmnl/Month
+    
+(063)    RCO2R6=
+        贿赂和腐败LSO2R7*"CCO2R6-SO2R7"+过度的行政干预LSO2R4*"CCO2R6-SO2R4"
+    Units: Dmnl/Month
+    
+(064)    RCOR2=
+        SMOOTH(DELAY3((可持续管理方案缺乏或不清晰LCO2R4+合同缺少可持续发展相关条款LCO2R3
+    +投资和资源分配条款不完善LCO2R2+权责分担条款不明确LCO2R1
+    +组织沟通协调程序不完善LCO2R6+缺少可持续文化建设LCO2R5
+    )/6,3),6)
+    Units: Dmnl/Month
+    
+(065)    REC2R1=
+        投资和资源分配条款不完善LCO2R2*"CEC2R1-CO2R2"+拆迁移民成本超支LEC2R4
+    *"CEC2R1-EC2R4"+时间和成本估计不当LEC2R2*"CEC2R1-EC2R2"
+    Units: Dmnl/Month
+    
+(066)    REC2R2=
+        拆迁移民成本超支LEC2R4*"CEC2R2-EC2R4"+设计缺陷LEC2R3*"CEC2R2-EC2R3"
+    +项目信息不透明LSO2R5*"CEC2R2-SO2R5"
+    Units: Dmnl/Month
+    
+(067)    REC2R3=
+        未考虑残障人士使用LSO2R3*"CEC2R3-SO2R3"+项目设计缺乏环境保护措施LEN2R1
+    *"CEC2R3-EN2R1"
+    Units: Dmnl/Month
+    
+(068)    REC2R4=
+        公众和当地社区参与受阻LSO2R6*"CEC2R4-SO2R6"+移民安置工作不到位LSO2R1
+    *"CEC2R4-SO2R1"+贿赂和腐败LSO2R7*"CEC2R4-SO2R7"
+    Units: Dmnl/Month
+    
+(069)    REC2R5=
+        组织沟通协调程序不完善LCO2R6*"CEC2R5-CO2R6"+设计缺陷LEC2R3
+    *"CEC2R5-EC2R3"+贿赂和腐败LSO2R7*"CEC2R5-SO2R7"+项目信息不透明LSO2R5
+    *"CEC2R5-SO2R5"
+    Units: Dmnl/Month
+    
+(070)    RECR2=
+         SMOOTH(DELAY3((拆迁移民成本超支LEC2R4+时间和成本估计不当LEC2R2
+    +融资困难LEC2R1+设计成本超支LEC2R5+设计缺陷LEC2R3)/5,3),5)
+    Units: Dmnl/Month
+    
+(071)    REN2R1=
+        可持续管理方案缺乏或不清晰LCO2R4*"CEN2R1-CO2R4"+合同缺少可持续发展相关条款LCO2R3
+    *"CEN2R1-CO2R3"+缺少可持续文化建设LCO2R5*"CEN2R1-CO2R5"+设计成本超支LEC2R5
+    *"CEN2R1-EC2R5"
+    Units: Dmnl/Month
+    
+(072)    REN2R2=
+        可持续管理方案缺乏或不清晰LCO2R4*"CEN2R2-CO2R4"+合同缺少可持续发展相关条款LCO2R3
+    *"CEN2R2-CO2R3"+缺少可持续文化建设LCO2R5*"CEN2R2-CO2R5"+设计缺陷LEC2R3
+    *"CEN2R2-EC2R3"
+    Units: Dmnl/Month
+    
+(073)    RENR2=
+        SMOOTH(DELAY3((项目设计与周围自然环境融入性不足LEN2R2+项目设计缺乏环境保护措施LEN2R1
+    )/2,3),2)
+    Units: Dmnl/Month
+    
+(074)    RSO2R1=
+        公众和当地社区参与受阻LSO2R6*"CSO2R1-SO2R6"+投资和资源分配条款不完善LCO2R2
+    *"CSO2R1-CO2R2"+时间和成本估计不当LEC2R2*"CSO2R1-EC2R2"+融资困难LEC2R1
+    *"CSO2R1-EC2R1"+贿赂和腐败LSO2R7*"CSO2R1-SO2R7"
+    Units: Dmnl/Month
+    
+(075)    RSO2R2=
+        缺少可持续文化建设LCO2R5*"CSO2R2-CO2R5"+设计缺陷LEC2R3*"CSO2R2-EC2R3"
+    Units: Dmnl/Month
+    
+(076)    RSO2R4=
+        组织沟通协调程序不完善LCO2R6*"CSO2R4-CO2R6"+贿赂和腐败LSO2R7
+    *"CSO2R4-SO2R7"
+    Units: Dmnl/Month
+    
+(077)    RSO2R5=
+        公众和当地社区参与受阻LSO2R6*"CSO2R5-SO2R6"+组织沟通协调程序不完善LCO2R6
+    *"CSO2R5-CO2R6"+过度的行政干预LSO2R4*"CSO2R5-SO2R4"
+    Units: Dmnl/Month
+    
+(078)    RSO2R6=
+        组织沟通协调程序不完善LCO2R6*"CSO2R6-CO2R6"+过度的行政干预LSO2R4
+    *"CSO2R6-SO2R4"+项目信息不透明LSO2R5*"CSO2R6-SO2R5"
+    Units: Dmnl/Month
+    
+(079)    RSO2R7=
+        公众和当地社区参与受阻LSO2R6*"CSO2R7-SO2R6"+投资和资源分配条款不完善LCO2R2
+    *"CSO2R7-CO2R2"+权责分担条款不明确LCO2R1*"CSO2R7-CO2R1"+过度的行政干预LSO2R4
+    *"CSO2R7-SO2R4"+项目信息不透明LSO2R5*"CSO2R7-SO2R5"
+    Units: Dmnl/Month
+    
+(080)    RSOR2=
+        SMOOTH(DELAY3((公众和当地社区参与受阻LSO2R6+未考虑残障人士使用LSO2R3
+    +移民安置工作不到位LSO2R1+贿赂和腐败LSO2R7+过度的行政干预LSO2R4
+    +项目信息不透明LSO2R5+项目设计与当地文化融入性不足LSO2R2
+    )/7,3),7)
+    Units: Dmnl/Month
+    
+(081)    SAVEPER  = 
+            TIME STEP
+    Units: Month [0,?]
+    The frequency with which output is stored.
+
+(082)    TIME STEP=
+        1
+    Units: Month [0,?]
+    The time step for the simulation.
+
+(083)    公众和当地社区参与受阻LSO2R6= INTEG (
+        RSO2R6,
+            1.71 
+            )
+    Units: Dmnl
+    
+(084)    协调风险LCO2R= INTEG (
+        SMOOTH(RCOR2,3),
+            0)
+    Units: Dmnl
+    
+(085)    可持续管理方案缺乏或不清晰LCO2R4= INTEG (
+        RCO2R4,
+            0.74 
+            )
+    Units: Dmnl
+    
+(086)    可持续视角下项目设计阶段整体风险LSD2=
+        0.25*协调风险LCO2R+0.25*环境风险LEN2R+0.25*社会风险LSO2R+0.25
+    *经济风险LEC2R
+    Units: Dmnl
+    
+(087)    合同缺少可持续发展相关条款LCO2R3= INTEG (
+        RCO2R3,
+            1.61 
+            )
+    Units: Dmnl
+    
+(088)    投资和资源分配条款不完善LCO2R2= INTEG (
+        RCO2R2,
+            1.03 
+            )
+    Units: Dmnl
+    
+(089)    拆迁移民成本超支LEC2R4= INTEG (
+        REC2R4,
+            2.26 
+            )
+    Units: Dmnl
+    
+(090)    时间和成本估计不当LEC2R2= INTEG (
+        REC2R2,
+            1.9 )
+    Units: Dmnl
+    
+(091)    未考虑残障人士使用LSO2R3=
+        1.58
+    Units: Dmnl
+    
+(092)    权责分担条款不明确LCO2R1= INTEG (
+        RCO2R1,
+            1.03 
+            )
+    Units: Dmnl
+    
+(093)    环境风险LEN2R= INTEG (
+        SMOOTH(RENR2,3),
+            0)
+    Units: Dmnl
+    
+(094)    社会风险LSO2R= INTEG (
+        SMOOTH(RSOR2, 3),
+            0)
+    Units: Dmnl
+    
+(095)    移民安置工作不到位LSO2R1= INTEG (
+        RSO2R1,
+            2.49 
+            )
+    Units: Dmnl
+    
+(096)    组织沟通协调程序不完善LCO2R6= INTEG (
+        RCO2R6,
+            1.03 
+            )
+    Units: Dmnl
+    
+(097)    经济风险LEC2R= INTEG (
+        SMOOTH(RECR2,3),
+            0)
+    Units: Dmnl
+    
+(098)    缺少可持续文化建设LCO2R5= INTEG (
+        RCO2R5,
+            0.68 
+            )
+    Units: Dmnl
+    
+(099)    融资困难LEC2R1= INTEG (
+        REC2R1,
+            2.51 
+            )
+    Units: Dmnl
+    
+(100)    设计成本超支LEC2R5= INTEG (
+        REC2R5,
+            1.29 
+            )
+    Units: Dmnl
+    
+(101)    设计缺陷LEC2R3= INTEG (
+        REC2R3,
+            1.92 
+            )
+    Units: Dmnl
+    
+(102)    贿赂和腐败LSO2R7= INTEG (
+        RSO2R7,
+            1.91 
+            )
+    Units: Dmnl
+    
+(103)    过度的行政干预LSO2R4= INTEG (
+        RSO2R4,
+            1.61 
+            )
+    Units: Dmnl
+    
+(104)    项目信息不透明LSO2R5= INTEG (
+        RSO2R5,
+            1.71 
+            )
+    Units: Dmnl
+    
+(105)    项目设计与周围自然环境融入性不足LEN2R2= INTEG (
+        REN2R2,
+            1.26 
+            )
+    Units: Dmnl
+    
+(106)    项目设计与当地文化融入性不足LSO2R2= INTEG (
+        RSO2R2,
+            1.25 
+            )
+    Units: Dmnl
+    
+(107)    项目设计缺乏环境保护措施LEN2R1= INTEG (
+        REN2R1,
+            2.63 
+            )
+    Units: Dmnl
+    
+(001)    "CCO2R1-SO2R4"=
+        0.105
+    Units: Dmnl/Month
+    
+(002)    "CCO2R2-SO2R4"=
+        0.068
+    Units: Dmnl/Month
+    
+(003)    "CCO2R3-CO2R5"=
+        0.125
+    Units: Dmnl/Month
+    
+(004)    "CCO2R3-SO2R4"=
+        0.059
+    Units: Dmnl/Month
+    
+(005)    "CCO2R4-CO2R3"=
+        0.115
+    Units: Dmnl/Month
+    
+(006)    "CCO2R4-CO2R5"=
+        0.123
+    Units: Dmnl/Month
+    
+(007)    "CCO2R4-SO2R4"=
+        0.086
+    Units: Dmnl/Month
+    
+(008)    "CCO2R5-CO2R3"=
+        0.12
+    Units: Dmnl/Month
+    
+(009)    "CCO2R5-CO2R6"=
+        0.113
+    Units: Dmnl/Month
+    
+(010)    "CCO2R5-SO2R7"=
+        0.063
+    Units: Dmnl/Month
+    
+(011)    "CCO2R6-SO2R4"=
+        0.082
+    Units: Dmnl/Month
+    
+(012)    "CCO2R6-SO2R7"=
+        0.086
+    Units: Dmnl/Month
+    
+(013)    "CEC2R1-CO2R2"=
+        0.114
+    Units: Dmnl/Month
+    
+(014)    "CEC2R1-EC2R2"=
+        0.141
+    Units: Dmnl/Month
+    
+(015)    "CEC2R1-EC2R4"=
+        0.203
+    Units: Dmnl/Month
+    
+(016)    "CEC2R2-EC2R3"=
+        0.107
+    Units: Dmnl/Month
+    
+(017)    "CEC2R2-EC2R4"=
+        0.133
+    Units: Dmnl/Month
+    
+(018)    "CEC2R2-SO2R5"=
+        0.068
+    Units: Dmnl/Month
+    
+(019)    "CEC2R3-EN2R1"=
+        0.158
+    Units: Dmnl/Month
+    
+(020)    "CEC2R3-SO2R3"=
+        0.267
+    Units: Dmnl/Month
+    
+(021)    "CEC2R4-SO2R1"=
+        0.169
+    Units: Dmnl/Month
+    
+(022)    "CEC2R4-SO2R6"=
+        0.124
+    Units: Dmnl/Month
+    
+(023)    "CEC2R4-SO2R7"=
+        0.091
+    Units: Dmnl/Month
+    
+(024)    "CEC2R5-CO2R6"=
+        0.077
+    Units: Dmnl/Month
+    
+(025)    "CEC2R5-EC2R3"=
+        0.119
+    Units: Dmnl/Month
+    
+(026)    "CEC2R5-SO2R5"=
+        0.075
+    Units: Dmnl/Month
+    
+(027)    "CEC2R5-SO2R7"=
+        0.085
+    Units: Dmnl/Month
+    
+(028)    "CEN2R1-CO2R3"=
+        0.086
+    Units: Dmnl/Month
+    
+(029)    "CEN2R1-CO2R4"=
+        0.086
+    Units: Dmnl/Month
+    
+(030)    "CEN2R1-CO2R5"=
+        0.092
+    Units: Dmnl/Month
+    
+(031)    "CEN2R1-EC2R5"=
+        0.164
+    Units: Dmnl/Month
+    
+(032)    "CEN2R2-CO2R3"=
+        0.088
+    Units: Dmnl/Month
+    
+(033)    "CEN2R2-CO2R4"=
+        0.088
+    Units: Dmnl/Month
+    
+(034)    "CEN2R2-CO2R5"=
+        0.094
+    Units: Dmnl/Month
+    
+(035)    "CEN2R2-EC2R3"=
+        0.172
+    Units: Dmnl/Month
+    
+(036)    "CSO2R1-CO2R2"=
+        0.104
+    Units: Dmnl/Month
+    
+(037)    "CSO2R1-EC2R1"=
+        0.158
+    Units: Dmnl/Month
+    
+(038)    "CSO2R1-EC2R2"=
+        0.129
+    Units: Dmnl/Month
+    
+(039)    "CSO2R1-SO2R6"=
+        0.082
+    Units: Dmnl/Month
+    
+(040)    "CSO2R1-SO2R7"=
+        0.081
+    Units: Dmnl/Month
+    
+(041)    "CSO2R2-CO2R5"=
+        0.086
+    Units: Dmnl/Month
+    
+(042)    "CSO2R2-EC2R3"=
+        0.158
+    Units: Dmnl/Month
+    
+(043)    "CSO2R4-CO2R6"=
+        0.088
+    Units: Dmnl/Month
+    
+(044)    "CSO2R4-SO2R7"=
+        0.098
+    Units: Dmnl/Month
+    
+(045)    "CSO2R5-CO2R6"=
+        0.115
+    Units: Dmnl/Month
+    
+(046)    "CSO2R5-SO2R4"=
+        0.122
+    Units: Dmnl/Month
+    
+(047)    "CSO2R5-SO2R6"=
+        0.099
+    Units: Dmnl/Month
+    
+(048)    "CSO2R6-CO2R6"=
+        0.111
+    Units: Dmnl/Month
+    
+(049)    "CSO2R6-SO2R4"=
+        0.117
+    Units: Dmnl/Month
+    
+(050)    "CSO2R6-SO2R5"=
+        0.109
+    Units: Dmnl/Month
+    
+(051)    "CSO2R7-CO2R1"=
+        0.094
+    Units: Dmnl/Month
+    
+(052)    "CSO2R7-CO2R2"=
+        0.101
+    Units: Dmnl/Month
+    
+(053)    "CSO2R7-SO2R4"=
+        0.074
+    Units: Dmnl/Month
+    
+(054)    "CSO2R7-SO2R5"=
+        0.092
+    Units: Dmnl/Month
+    
+(055)    "CSO2R7-SO2R6"=
+        0.08
+    Units: Dmnl/Month
+    
+(056)    FINAL TIME=
+        12
+    Units: Month
+    The final time for the simulation.
+
+(057)    INITIAL TIME  = 0
+    Units: Month
+    The initial time for the simulation.
+
+(058)    RCO2R1=
+        "CCO2R1-SO2R4"*过度的行政干预LSO2R4
+    Units: Dmnl/Month
+    
+(059)    RCO2R2=
+        过度的行政干预LSO2R4*"CCO2R2-SO2R4"
+    Units: Dmnl/Month
+    
+(060)    RCO2R3=
+        缺少可持续文化建设LCO2R5*"CCO2R3-CO2R5"+过度的行政干预LSO2R4
+    *"CCO2R3-SO2R4"
+    Units: Dmnl/Month
+    
+(061)    RCO2R4=
+        合同缺少可持续发展相关条款LCO2R3*"CCO2R4-CO2R3"+缺少可持续文化建设LCO2R5
+    *"CCO2R4-CO2R5"+过度的行政干预LSO2R4*"CCO2R4-SO2R4"
+    Units: Dmnl/Month
+    
+(062)    RCO2R5=
+        合同缺少可持续发展相关条款LCO2R3*"CCO2R5-CO2R3"+组织沟通协调程序不完善LCO2R6
+    *"CCO2R5-CO2R6"+贿赂和腐败LSO2R7*"CCO2R5-SO2R7"
+    Units: Dmnl/Month
+    
+(063)    RCO2R6=
+        贿赂和腐败LSO2R7*"CCO2R6-SO2R7"+过度的行政干预LSO2R4*"CCO2R6-SO2R4"
+    Units: Dmnl/Month
+    
+(064)    RCOR2=
+        SMOOTH(DELAY3((可持续管理方案缺乏或不清晰LCO2R4+合同缺少可持续发展相关条款LCO2R3
+    +投资和资源分配条款不完善LCO2R2+权责分担条款不明确LCO2R1
+    +组织沟通协调程序不完善LCO2R6+缺少可持续文化建设LCO2R5
+    )/6,3),6)
+    Units: Dmnl/Month
+    
+(065)    REC2R1=
+        投资和资源分配条款不完善LCO2R2*"CEC2R1-CO2R2"+拆迁移民成本超支LEC2R4
+    *"CEC2R1-EC2R4"+时间和成本估计不当LEC2R2*"CEC2R1-EC2R2"
+    Units: Dmnl/Month
+    
+(066)    REC2R2=
+        拆迁移民成本超支LEC2R4*"CEC2R2-EC2R4"+设计缺陷LEC2R3*"CEC2R2-EC2R3"
+    +项目信息不透明LSO2R5*"CEC2R2-SO2R5"
+    Units: Dmnl/Month
+    
+(067)    REC2R3=
+        未考虑残障人士使用LSO2R3*"CEC2R3-SO2R3"+项目设计缺乏环境保护措施LEN2R1
+    *"CEC2R3-EN2R1"
+    Units: Dmnl/Month
+    
+(068)    REC2R4=
+        公众和当地社区参与受阻LSO2R6*"CEC2R4-SO2R6"+移民安置工作不到位LSO2R1
+    *"CEC2R4-SO2R1"+贿赂和腐败LSO2R7*"CEC2R4-SO2R7"
+    Units: Dmnl/Month
+    
+(069)    REC2R5=
+        组织沟通协调程序不完善LCO2R6*"CEC2R5-CO2R6"+设计缺陷LEC2R3
+    *"CEC2R5-EC2R3"+贿赂和腐败LSO2R7*"CEC2R5-SO2R7"+项目信息不透明LSO2R5
+    *"CEC2R5-SO2R5"
+    Units: Dmnl/Month
+    
+(070)    RECR2=
+         SMOOTH(DELAY3((拆迁移民成本超支LEC2R4+时间和成本估计不当LEC2R2
+    +融资困难LEC2R1+设计成本超支LEC2R5+设计缺陷LEC2R3)/5,3),5)
+    Units: Dmnl/Month
+    
+(071)    REN2R1=
+        可持续管理方案缺乏或不清晰LCO2R4*"CEN2R1-CO2R4"+合同缺少可持续发展相关条款LCO2R3
+    *"CEN2R1-CO2R3"+缺少可持续文化建设LCO2R5*"CEN2R1-CO2R5"+设计成本超支LEC2R5
+    *"CEN2R1-EC2R5"
+    Units: Dmnl/Month
+    
+(072)    REN2R2=
+        可持续管理方案缺乏或不清晰LCO2R4*"CEN2R2-CO2R4"+合同缺少可持续发展相关条款LCO2R3
+    *"CEN2R2-CO2R3"+缺少可持续文化建设LCO2R5*"CEN2R2-CO2R5"+设计缺陷LEC2R3
+    *"CEN2R2-EC2R3"
+    Units: Dmnl/Month
+    
+(073)    RENR2=
+        SMOOTH(DELAY3((项目设计与周围自然环境融入性不足LEN2R2+项目设计缺乏环境保护措施LEN2R1
+    )/2,3),2)
+    Units: Dmnl/Month
+    
+(074)    RSO2R1=
+        公众和当地社区参与受阻LSO2R6*"CSO2R1-SO2R6"+投资和资源分配条款不完善LCO2R2
+    *"CSO2R1-CO2R2"+时间和成本估计不当LEC2R2*"CSO2R1-EC2R2"+融资困难LEC2R1
+    *"CSO2R1-EC2R1"+贿赂和腐败LSO2R7*"CSO2R1-SO2R7"
+    Units: Dmnl/Month
+    
+(075)    RSO2R2=
+        缺少可持续文化建设LCO2R5*"CSO2R2-CO2R5"+设计缺陷LEC2R3*"CSO2R2-EC2R3"
+    Units: Dmnl/Month
+    
+(076)    RSO2R4=
+        组织沟通协调程序不完善LCO2R6*"CSO2R4-CO2R6"+贿赂和腐败LSO2R7
+    *"CSO2R4-SO2R7"
+    Units: Dmnl/Month
+    
+(077)    RSO2R5=
+        公众和当地社区参与受阻LSO2R6*"CSO2R5-SO2R6"+组织沟通协调程序不完善LCO2R6
+    *"CSO2R5-CO2R6"+过度的行政干预LSO2R4*"CSO2R5-SO2R4"
+    Units: Dmnl/Month
+    
+(078)    RSO2R6=
+        组织沟通协调程序不完善LCO2R6*"CSO2R6-CO2R6"+过度的行政干预LSO2R4
+    *"CSO2R6-SO2R4"+项目信息不透明LSO2R5*"CSO2R6-SO2R5"
+    Units: Dmnl/Month
+    
+(079)    RSO2R7=
+        公众和当地社区参与受阻LSO2R6*"CSO2R7-SO2R6"+投资和资源分配条款不完善LCO2R2
+    *"CSO2R7-CO2R2"+权责分担条款不明确LCO2R1*"CSO2R7-CO2R1"+过度的行政干预LSO2R4
+    *"CSO2R7-SO2R4"+项目信息不透明LSO2R5*"CSO2R7-SO2R5"
+    Units: Dmnl/Month
+    
+(080)    RSOR2=
+        SMOOTH(DELAY3((公众和当地社区参与受阻LSO2R6+未考虑残障人士使用LSO2R3
+    +移民安置工作不到位LSO2R1+贿赂和腐败LSO2R7+过度的行政干预LSO2R4
+    +项目信息不透明LSO2R5+项目设计与当地文化融入性不足LSO2R2
+    )/7,3),7)
+    Units: Dmnl/Month
+    
+(081)    SAVEPER  = 
+            TIME STEP
+    Units: Month [0,?]
+    The frequency with which output is stored.
+
+(082)    TIME STEP=
+        1
+    Units: Month [0,?]
+    The time step for the simulation.
+
+(083)    公众和当地社区参与受阻LSO2R6= INTEG (
+        RSO2R6,
+            1.71 
+            )
+    Units: Dmnl
+    
+(084)    协调风险LCO2R= INTEG (
+        SMOOTH(RCOR2,3),
+            0)
+    Units: Dmnl
+    
+(085)    可持续管理方案缺乏或不清晰LCO2R4= INTEG (
+        RCO2R4,
+            0.74 
+            )
+    Units: Dmnl
+    
+(086)    可持续视角下项目设计阶段整体风险LSD2=
+        0.25*协调风险LCO2R+0.25*环境风险LEN2R+0.25*社会风险LSO2R+0.25
+    *经济风险LEC2R
+    Units: Dmnl
+    
+(087)    合同缺少可持续发展相关条款LCO2R3= INTEG (
+        RCO2R3,
+            1.61 
+            )
+    Units: Dmnl
+    
+(088)    投资和资源分配条款不完善LCO2R2= INTEG (
+        RCO2R2,
+            1.03 
+            )
+    Units: Dmnl
+    
+(089)    拆迁移民成本超支LEC2R4= INTEG (
+        REC2R4,
+            2.26 
+            )
+    Units: Dmnl
+    
+(090)    时间和成本估计不当LEC2R2= INTEG (
+        REC2R2,
+            1.9 )
+    Units: Dmnl
+    
+(091)    未考虑残障人士使用LSO2R3=
+        1.58
+    Units: Dmnl
+    
+(092)    权责分担条款不明确LCO2R1= INTEG (
+        RCO2R1,
+            1.03 
+            )
+    Units: Dmnl
+    
+(093)    环境风险LEN2R= INTEG (
+        SMOOTH(RENR2,3),
+            0)
+    Units: Dmnl
+    
+(094)    社会风险LSO2R= INTEG (
+        SMOOTH(RSOR2, 3),
+            0)
+    Units: Dmnl
+    
+(095)    移民安置工作不到位LSO2R1= INTEG (
+        RSO2R1,
+            2.49 
+            )
+    Units: Dmnl
+    
+(096)    组织沟通协调程序不完善LCO2R6= INTEG (
+        RCO2R6,
+            1.03 
+            )
+    Units: Dmnl
+    
+(097)    经济风险LEC2R= INTEG (
+        SMOOTH(RECR2,3),
+            0)
+    Units: Dmnl
+    
+(098)    缺少可持续文化建设LCO2R5= INTEG (
+        RCO2R5,
+            0.68 
+            )
+    Units: Dmnl
+    
+(099)    融资困难LEC2R1= INTEG (
+        REC2R1,
+            2.51 
+            )
+    Units: Dmnl
+    
+(100)    设计成本超支LEC2R5= INTEG (
+        REC2R5,
+            1.29 
+            )
+    Units: Dmnl
+    
+(101)    设计缺陷LEC2R3= INTEG (
+        REC2R3,
+            1.92 
+            )
+    Units: Dmnl
+    
+(102)    贿赂和腐败LSO2R7= INTEG (
+        RSO2R7,
+            1.91 
+            )
+    Units: Dmnl
+    
+(103)    过度的行政干预LSO2R4= INTEG (
+        RSO2R4,
+            1.61 
+            )
+    Units: Dmnl
+    
+(104)    项目信息不透明LSO2R5= INTEG (
+        RSO2R5,
+            1.71 
+            )
+    Units: Dmnl
+    
+(105)    项目设计与周围自然环境融入性不足LEN2R2= INTEG (
+        REN2R2,
+            1.26 
+            )
+    Units: Dmnl
+    
+(106)    项目设计与当地文化融入性不足LSO2R2= INTEG (
+        RSO2R2,
+            1.25 
+            )
+    Units: Dmnl
+    
+(107)    项目设计缺乏环境保护措施LEN2R1= INTEG (
+        REN2R1,
+            2.63 
+            )
+    Units: Dmnl
+    
+（3）港珠澳大桥施工阶段
+(001)    "CCO3R1-CO3R5"=
+        0.097
+    Units: Dmnl/Month
+    
+(002)    "CCO3R1-SO3R11"=
+        0.09
+    Units: Dmnl/Month
+    
+(003)    "CCO3R1-SO3R3"=
+        0.091
+    Units: Dmnl/Month
+    
+(004)    "CCO3R3-CO3R1"=
+        0.102
+    Units: Dmnl/Month
+    
+(005)    "CCO3R3-SO3R11"=
+        0.099
+    Units: Dmnl/Month
+    
+(006)    "CCO3R5-CO3R1"=
+        0.131
+    Units: Dmnl/Month
+    
+(007)    "CCO3R5-CO3R2"=
+        0.108
+    Units: Dmnl/Month
+    
+(008)    "CCO3R5-CO3R4"=
+        0.097
+    Units: Dmnl/Month
+    
+(009)    "CEC3R1-EC3R2"=
+        0.077
+    Units: Dmnl/Month
+    
+(010)    "CEC3R1-EC3R3"=
+        0.061
+    Units: Dmnl/Month
+    
+(011)    "CEC3R1-EC3R6"=
+        0.123
+    Units: Dmnl/Month
+    
+(012)    "CEC3R1-EN3R7"=
+        0.068
+    Units: Dmnl/Month
+    
+(013)    "CEC3R1-SO3R2"=
+        0.052
+    Units: Dmnl/Month
+    
+(014)    "CEC3R2-CO3R1"=
+        0.05
+    Units: Dmnl/Month
+    
+(015)    "CEC3R2-CO3R5"=
+        0.052
+    Units: Dmnl/Month
+    
+(016)    "CEC3R2-EC3R3"=
+        0.064
+    Units: Dmnl/Month
+    
+(017)    "CEC3R2-EC3R6"=
+        0.098
+    Units: Dmnl/Month
+    
+(018)    "CEC3R2-EN3R13"=
+        0.061
+    Units: Dmnl/Month
+    
+(019)    "CEC3R2-SO3R12"=
+        0.071
+    Units: Dmnl/Month
+    
+(020)    "CEC3R2-SO3R4"=
+        0.082
+    Units: Dmnl/Month
+    
+(021)    "CEC3R3-CO3R4"=
+        0.068
+    Units: Dmnl/Month
+    
+(022)    "CEC3R3-EN3R6"=
+        0.081
+    Units: Dmnl/Month
+    
+(023)    "CEC3R3-SO3R2"=
+        0.06
+    Units: Dmnl/Month
+    
+(024)    "CEC3R4-EN3R5"=
+        0.071
+    Units: Dmnl/Month
+    
+(025)    "CEC3R5-EN3R1"=
+        0.058
+    Units: Dmnl/Month
+    
+(026)    "CEC3R5-EN3R2"=
+        0.056
+    Units: Dmnl/Month
+    
+(027)    "CEC3R5-EN3R4"=
+        0.062
+    Units: Dmnl/Month
+    
+(028)    "CEC3R6-EN3R1"=
+        0.058
+    Units: Dmnl/Month
+    
+(029)    "CEC3R6-EN3R12"=
+        0.072
+    Units: Dmnl/Month
+    
+(030)    "CEC3R6-EN3R2"=
+        0.06
+    Units: Dmnl/Month
+    
+(031)    "CEC3R6-EN3R5"=
+        0.062
+    Units: Dmnl/Month
+    
+(032)    "CEC3R6-EN3R6"=
+        0.057
+    Units: Dmnl/Month
+    
+(033)    "CEC3R6-SO3R1"=
+        0.091
+    Units: Dmnl/Month
+    
+(034)    "CEN3R1-CO3R3"=
+        0.068
+    Units: Dmnl/Month
+    
+(035)    "CEN3R10-EN3R14"=
+        0.103
+    Units: Dmnl/Month
+    
+(036)    "CEN3R10-EN3R2"=
+        0.087
+    Units: Dmnl/Month
+    
+(037)    "CEN3R10-EN3R5"=
+        0.09
+    Units: Dmnl/Month
+    
+(038)    "CEN3R11-CO3R3"=
+        0.053
+    Units: Dmnl/Month
+    
+(039)    "CEN3R11-EN3R1"=
+        0.058
+    Units: Dmnl/Month
+    
+(040)    "CEN3R11-EN3R13"=
+        0.062
+    Units: Dmnl/Month
+    
+(041)    "CEN3R11-EN3R14"=
+        0.071
+    Units: Dmnl/Month
+    
+(042)    "CEN3R11-EN3R2"=
+        0.06
+    Units: Dmnl/Month
+    
+(043)    "CEN3R11-EN3R5"=
+        0.063
+    Units: Dmnl/Month
+    
+(044)    "CEN3R12-CO3R3"=
+        0.05
+    Units: Dmnl/Month
+    
+(045)    "CEN3R12-EN3R1"=
+        0.055
+    Units: Dmnl/Month
+    
+(046)    "CEN3R12-EN3R10"=
+        0.088
+    Units: Dmnl/Month
+    
+(047)    "CEN3R12-EN3R14"=
+        0.089
+    Units: Dmnl/Month
+    
+(048)    "CEN3R12-EN3R2"=
+        0.057
+    Units: Dmnl/Month
+    
+(049)    "CEN3R12-EN3R5"=
+        0.059
+    Units: Dmnl/Month
+    
+(050)    "CEN3R13-EN3R10"=
+        0.107
+    Units: Dmnl/Month
+    
+(051)    "CEN3R13-EN3R14"=
+        0.081
+    Units: Dmnl/Month
+    
+(052)    "CEN3R14-CO3R3"=
+        0.082
+    Units: Dmnl/Month
+    
+(053)    "CEN3R2-CO3R3"=
+        0.065
+    Units: Dmnl/Month
+    
+(054)    "CEN3R3-CO3R3"=
+        0.084
+    Units: Dmnl/Month
+    
+(055)    "CEN3R4-CO3R3"=
+        0.086
+    Units: Dmnl/Month
+    
+(056)    "CEN3R5-CO3R3"=
+        0.075
+    Units: Dmnl/Month
+    
+(057)    "CEN3R5-EN3R6"=
+        0.106
+    Units: Dmnl/Month
+    
+(058)    "CEN3R6-CO3R3"=
+        0.075
+    Units: Dmnl/Month
+    
+(059)    "CEN3R6-SO3R2"=
+        0.078
+    Units: Dmnl/Month
+    
+(060)    "CEN3R7-CO3R3"=
+        0.067
+    Units: Dmnl/Month
+    
+(061)    "CEN3R7-EC3R3"=
+        0.082
+    Units: Dmnl/Month
+    
+(062)    "CEN3R8-CO3R3"=
+        0.069
+    Units: Dmnl/Month
+    
+(063)    "CEN3R8-EC3R3"=
+        0.085
+    Units: Dmnl/Month
+    
+(064)    "CEN3R9-CO3R3"=
+        0.076
+    Units: Dmnl/Month
+    
+(065)    "CEN3R9-SO3R2"=
+        0.079
+    Units: Dmnl/Month
+    
+(066)    "CSO3R1-SO3R11"=
+        0.087
+    Units: Dmnl/Month
+    
+(067)    "CSO3R11-CO3R3"=
+        0.056
+    Units: Dmnl/Month
+    
+(068)    "CSO3R11-SO3R3"=
+        0.093
+    Units: Dmnl/Month
+    
+(069)    "CSO3R12-CO3R1"=
+        0.054
+    Units: Dmnl/Month
+    
+(070)    "CSO3R12-SO3R11"=
+        0.069
+    Units: Dmnl/Month
+    
+(071)    "CSO3R12-SO3R9"=
+        0.081
+    Units: Dmnl/Month
+    
+(072)    "CSO3R2-EC3R3"=
+        0.054
+    Units: Dmnl/Month
+    
+(073)    "CSO3R2-SO3R11"=
+        0.054
+    Units: Dmnl/Month
+    
+(074)    "CSO3R3-CO3R5"=
+        0.06
+    Units: Dmnl/Month
+    
+(075)    "CSO3R3-SO3R11"=
+        0.074
+    Units: Dmnl/Month
+    
+(076)    "CSO3R4-SO3R12"=
+        0.081
+    Units: Dmnl/Month
+    
+(077)    "CSO3R5-EN3R1"=
+        0.081
+    Units: Dmnl/Month
+    
+(078)    "CSO3R5-EN3R2"=
+        0.083
+    Units: Dmnl/Month
+    
+(079)    "CSO3R5-EN3R4"=
+        0.092
+    Units: Dmnl/Month
+    
+(080)    "CSO3R5-SO3R4"=
+        0.114
+    Units: Dmnl/Month
+    
+(081)    "CSO3R6-EN3R11"=
+        0.06
+    Units: Dmnl/Month
+    
+(082)    "CSO3R6-EN3R13"=
+        0.07
+    Units: Dmnl/Month
+    
+(083)    "CSO3R6-SO3R12"=
+        0.061
+    Units: Dmnl/Month
+    
+(084)    "CSO3R6-SO3R7"=
+        0.095
+    Units: Dmnl/Month
+    
+(085)    "CSO3R7-EN3R1"=
+        0.086
+    Units: Dmnl/Month
+    
+(086)    "CSO3R7-EN3R10"=
+        0.062
+    Units: Dmnl/Month
+    
+(087)    "CSO3R7-EN3R2"=
+        0.07
+    Units: Dmnl/Month
+    
+(088)    "CSO3R7-EN3R3"=
+        0.065
+    Units: Dmnl/Month
+    
+(089)    "CSO3R7-EN3R4"=
+        0.078
+    Units: Dmnl/Month
+    
+(090)    "CSO3R7-EN3R5"=
+        0.055
+    Units: Dmnl/Month
+    
+(091)    "CSO3R8-EC3R5"=
+        0.149
+    Units: Dmnl/Month
+    
+(092)    "CSO3R9-EN3R1"=
+        0.061
+    Units: Dmnl/Month
+    
+(093)    "CSO3R9-EN3R2"=
+        0.063
+    Units: Dmnl/Month
+    
+(094)    "CSO3R9-EN3R4"=
+        0.07
+    Units: Dmnl/Month
+    
+(095)    "CSO3R9-SO3R12"=
+        0.075
+    Units: Dmnl/Month
+    
+(096)    "CSO3R9-SO3R6"=
+        0.085
+    Units: Dmnl/Month
+    
+(097)    "CSO3R9-SO3R7"=
+        0.088
+    Units: Dmnl/Month
+    
+(098)    FINAL TIME=
+        108
+    Units: Month
+    The final time for the simulation.
+
+(099)    INITIAL TIME  = 0
+    Units: Month
+    The initial time for the simulation.
+
+(100)    RCO3R=
+        SMOOTH(DELAY3((利益相关者可持续意识差LCO3R3+团队人员经验和能力不足LCO3R4
+    +团队人员能力素质不互补LCO3R2+团队内部矛盾冲突严重LCO3R5
+    +项目参与者间沟通协调不足LCO3R1)/5,3),5)
+    Units: Dmnl/Month
+    
+(101)    RCO3R1=
+        公众和当地社区参与受阻LSO3R11*"CCO3R1-SO3R11"+团队内部矛盾冲突严重LCO3R5
+    *"CCO3R1-CO3R5"+过度的行政干预LSO3R3*"CCO3R1-SO3R3"
+    Units: Dmnl/Month
+    
+(102)    RCO3R3=
+        公众和当地社区参与受阻LSO3R11*"CCO3R3-SO3R11"+项目参与者间沟通协调不足LCO3R1
+    *"CCO3R3-CO3R1"
+    Units: Dmnl/Month
+    
+(103)    RCO3R5=
+        团队人员经验和能力不足LCO3R4*"CCO3R5-CO3R4"+团队人员能力素质不互补LCO3R2
+    *"CCO3R5-CO3R2"+项目参与者间沟通协调不足LCO3R1*"CCO3R5-CO3R1"
+    Units: Dmnl/Month
+    
+(104)    REC3R=
+        SMOOTH(DELAY3((不满足可持续目标引起的索赔LEC3R6+工期延误LEC3R2
+    +工程质量不合格LEC3R3+建安成本超支LEC3R1+建筑垃圾处置成本超支LEC3R4
+    +影响当地企业正常生产经营LEC3R5)/6,3),6)
+    Units: Dmnl/Month
+    
+(105)    REC3R1=
+        不满足可持续目标引起的索赔LEC3R6*"CEC3R1-EC3R6"+工期延误LEC3R2
+    *"CEC3R1-EC3R2"+工程质量不合格LEC3R3*"CEC3R1-EC3R3"+施工材料消耗过量LEN3R7
+    *"CEC3R1-EN3R7"+贿赂和腐败LSO3R2*"CEC3R1-SO3R2"
+    Units: Dmnl/Month
+    
+(106)    REC3R2=
+        不满足可持续目标引起的索赔LEC3R6*"CEC3R2-EC3R6"+团队内部矛盾冲突严重LCO3R5
+    *"CEC3R2-CO3R5"+工程质量不合格LEC3R3*"CEC3R2-EC3R3"+引起地质灾害LEN3R13
+    *"CEC3R2-EN3R13"+施工方与当地公众不协调LSO3R12*"CEC3R2-SO3R12"+
+    施工现场发生安全事故LSO3R4*"CEC3R2-SO3R4"+项目参与者间沟通协调不足LCO3R1
+    *"CEC3R2-CO3R1"
+    Units: Dmnl/Month
+    
+(107)    REC3R3=
+        使用大量不环保施工材料LEN3R6*"CEC3R3-EN3R6"+团队人员经验和能力不足LCO3R4
+    *"CEC3R3-CO3R4"+贿赂和腐败LSO3R2*"CEC3R3-SO3R2"
+    Units: Dmnl/Month
+    
+(108)    REC3R4=
+        固体废物污染LEN3R5*"CEC3R4-EN3R5"
+    Units: Dmnl/Month
+    
+(109)    REC3R5=
+        废气排放污染LEN3R1*"CEC3R5-EN3R1"+废水排放污染LEN3R2*"CEC3R5-EN3R2"
+    +施工噪声污染LEN3R4*"CEC3R5-EN3R4"
+    Units: Dmnl/Month
+    
+(110)    REC3R6=
+        使用大量不环保施工材料LEN3R6*"CEC3R6-EN3R6"+固体废物污染LEN3R5
+    *"CEC3R6-EN3R5"+废气排放污染LEN3R1*"CEC3R6-EN3R1"+废水排放污染LEN3R2
+    *"CEC3R6-EN3R2"+打破生态平衡功能LEN3R12*"CEC3R6-EN3R12"+施工对方地文化遗产破坏LSO3R1
+    *"CEC3R6-SO3R1"
+    Units: Dmnl/Month
+    
+(111)    REN3R=
+        SMOOTH(DELAY3((使用大量不可再生能源LEN3R9+占用大量非建设用地LEN3R14
+    +使用大量不环保施工材料LEN3R6+固体废物污染LEN3R5+土壤质量降低LEN3R10
+    +夜间光污染LEN3R3+废气排放污染LEN3R1+废水排放污染LEN3R2+引起地质灾害LEN3R13
+    +打破生态平衡功能LEN3R12+施工噪声污染LEN3R4+施工对当地自然景观遗产破坏LEN3R11
+    +施工材料消耗过量LEN3R7+能源消耗过量LEN3R8)/14,3),14)
+    Units: Dmnl/Month
+    
+(112)    REN3R1=
+        利益相关者可持续意识差LCO3R3*"CEN3R1-CO3R3"
+    Units: Dmnl/Month
+    
+(113)    REN3R10=
+        占用大量非建设用地LEN3R14*"CEN3R10-EN3R14"+固体废物污染LEN3R5
+    *"CEN3R10-EN3R5"+废水排放污染LEN3R2*"CEN3R10-EN3R2"
+    Units: Dmnl/Month
+    
+(114)    REN3R11=
+        利益相关者可持续意识差LCO3R3*"CEN3R11-CO3R3"+占用大量非建设用地LEN3R14
+    *"CEN3R11-EN3R14"+固体废物污染LEN3R5*"CEN3R11-EN3R5"+废气排放污染LEN3R1
+    *"CEN3R11-EN3R1"+废水排放污染LEN3R2*"CEN3R11-EN3R2"+引起地质灾害LEN3R13
+    *"CEN3R11-EN3R13"
+    Units: Dmnl/Month
+    
+(115)    REN3R12=
+        利益相关者可持续意识差LCO3R3*"CEN3R12-CO3R3"+占用大量非建设用地LEN3R14
+    *"CEN3R12-EN3R14"+固体废物污染LEN3R5*"CEN3R12-EN3R5"+土壤质量降低LEN3R10
+    *"CEN3R12-EN3R10"+废气排放污染LEN3R1*"CEN3R12-EN3R1"+废水排放污染LEN3R2
+    *"CEN3R12-EN3R2"
+    Units: Dmnl/Month
+    
+(116)    REN3R13=
+        占用大量非建设用地LEN3R14*"CEN3R13-EN3R14"+土壤质量降低LEN3R10
+    *"CEN3R13-EN3R10"
+    Units: Dmnl/Month
+    
+(117)    REN3R14=
+        "CEN3R14-CO3R3"*利益相关者可持续意识差LCO3R3
+    Units: Dmnl/Month
+    
+(118)    REN3R2=
+        利益相关者可持续意识差LCO3R3*"CEN3R2-CO3R3"
+    Units: Dmnl/Month
+    
+(119)    REN3R3=
+        利益相关者可持续意识差LCO3R3*"CEN3R3-CO3R3"
+    Units: Dmnl/Month
+    
+(120)    REN3R4=
+        利益相关者可持续意识差LCO3R3*"CEN3R4-CO3R3"
+    Units: Dmnl/Month
+    
+(121)    REN3R5=
+        "CEN3R5-EN3R6"*使用大量不环保施工材料LEN3R6+利益相关者可持续意识差LCO3R3
+    *"CEN3R5-CO3R3"
+    Units: Dmnl/Month
+    
+(122)    REN3R6=
+        利益相关者可持续意识差LCO3R3*"CEN3R6-CO3R3"+贿赂和腐败LSO3R2
+    *"CEN3R6-SO3R2"
+    Units: Dmnl/Month
+    
+(123)    REN3R7=
+        利益相关者可持续意识差LCO3R3*"CEN3R7-CO3R3"+工程质量不合格LEC3R3
+    *"CEN3R7-EC3R3"
+    Units: Dmnl/Month
+    
+(124)    REN3R8=
+        利益相关者可持续意识差LCO3R3*"CEN3R8-CO3R3"+工程质量不合格LEC3R3
+    *"CEN3R8-EC3R3"
+    Units: Dmnl/Month
+    
+(125)    REN3R9=
+        利益相关者可持续意识差LCO3R3*"CEN3R9-CO3R3"+贿赂和腐败LSO3R2
+    *"CEN3R9-SO3R2"
+    Units: Dmnl/Month
+    
+(126)    RSO3R=
+        SMOOTH(DELAY3((公众和当地社区参与受阻LSO3R11+对当地就业情况不利影响LSO3R8
+    +居民健康受到威胁LSO3R7+居民安全受到威胁LSO3R6+扰乱当地居民正常生活LSO3R9
+    +施工对方地文化遗产破坏LSO3R1+施工方与当地公众不协调LSO3R12
+    +施工现场发生安全事故LSO3R4+贿赂和腐败LSO3R2+过度的行政干预LSO3R3
+    +项目人员健康受到威胁LSO3R5+项目周边便利设施不足LSO3R10
+    )/12,3),12)
+    Units: Dmnl/Month
+    
+(127)    RSO3R1=
+        公众和当地社区参与受阻LSO3R11*"CSO3R1-SO3R11"
+    Units: Dmnl/Month
+    
+(128)    RSO3R11=
+        利益相关者可持续意识差LCO3R3*"CSO3R11-CO3R3"+过度的行政干预LSO3R3
+    *"CSO3R11-SO3R3"
+    Units: Dmnl/Month
+    
+(129)    RSO3R12=
+        公众和当地社区参与受阻LSO3R11*"CSO3R12-SO3R11"+项目参与者间沟通协调不足LCO3R1
+    *"CSO3R12-CO3R1"+扰乱当地居民正常生活LSO3R9*"CSO3R12-SO3R9"
+    Units: Dmnl/Month
+    
+(130)    RSO3R2=
+        公众和当地社区参与受阻LSO3R11*"CSO3R2-SO3R11"+过度的行政干预LSO3R3
+    *"CSO3R2-EC3R3"
+    Units: Dmnl/Month
+    
+(131)    RSO3R3=
+        团队内部矛盾冲突严重LCO3R5*"CSO3R3-CO3R5"+公众和当地社区参与受阻LSO3R11
+    *"CSO3R3-SO3R11"
+    Units: Dmnl/Month
+    
+(132)    RSO3R4=
+        "CSO3R4-SO3R12"*施工方与当地公众不协调LSO3R12
+    Units: Dmnl/Month
+    
+(133)    RSO3R5=
+        施工现场发生安全事故LSO3R4*"CSO3R5-SO3R4"+施工噪声污染LEN3R4
+    *"CSO3R5-EN3R4"+"CSO3R5-EN3R2"*废水排放污染LEN3R2+"CSO3R5-EN3R1"*废气排放污染LEN3R1
+    Units: Dmnl/Month
+    
+(134)    RSO3R6=
+        居民健康受到威胁LSO3R7*"CSO3R6-SO3R7"+引起地质灾害LEN3R13*"CSO3R6-EN3R13"
+    +施工方与当地公众不协调LSO3R12
+        *"CSO3R6-SO3R12"+施工对当地自然景观遗产破坏LEN3R11*"CSO3R6-EN3R11"
+    Units: Dmnl/Month
+    
+(135)    RSO3R7=
+        固体废物污染LEN3R5*"CSO3R7-EN3R5"+土壤质量降低LEN3R10*"CSO3R7-EN3R10"
+    +夜间光污染LEN3R3*"CSO3R7-EN3R3"+废气排放污染LEN3R1*"CSO3R7-EN3R1"
+    +废水排放污染LEN3R2*"CSO3R7-EN3R2"+施工噪声污染LEN3R4*"CSO3R7-EN3R4"
+    Units: Dmnl/Month
+    
+(136)    RSO3R8=
+        影响当地企业正常生产经营LEC3R5*"CSO3R8-EC3R5"
+    Units: Dmnl/Month
+    
+(137)    RSO3R9=
+        居民健康受到威胁LSO3R7*"CSO3R9-SO3R7"+居民安全受到威胁LSO3R6
+    *"CSO3R9-SO3R6"+废气排放污染LEN3R1*"CSO3R9-EN3R1"+废水排放污染LEN3R2
+    *"CSO3R9-EN3R2"+施工噪声污染LEN3R4*"CSO3R9-EN3R4"+施工方与当地公众不协调LSO3R12
+    *"CSO3R9-SO3R12"
+    Units: Dmnl/Month
+    
+(138)    SAVEPER  = 
+            TIME STEP
+    Units: Month [0,?]
+    The frequency with which output is stored.
+
+(139)    TIME STEP  = 1
+    Units: Month [0,?]
+    The time step for the simulation.
+
+(140)    不满足可持续目标引起的索赔LEC3R6= INTEG (
+        REC3R6,
+            1.53 
+            )
+    Units: Dmnl
+    
+(141)    使用大量不可再生能源LEN3R9= INTEG (
+        REN3R9,
+            2.81 
+            )
+    Units: Dmnl
+    
+(142)    使用大量不环保施工材料LEN3R6= INTEG (
+        REN3R6,
+            2.72 
+            )
+    Units: Dmnl
+    
+(143)    公众和当地社区参与受阻LSO3R11= INTEG (
+        RSO3R11,
+            0.77 
+            )
+    Units: Dmnl
+    
+(144)    利益相关者可持续意识差LCO3R3= INTEG (
+        RCO3R3,
+            0.63 
+            )
+    Units: Dmnl
+    
+(145)    协调风险LCO3R= INTEG (
+        SMOOTH(RCO3R, 3),
+            0)
+    Units: Dmnl
+    
+(146)    占用大量非建设用地LEN3R14= INTEG (
+        REN3R14,
+            1.99 
+            )
+    Units: Dmnl
+    
+(147)    可持续视角下项目施工阶段整体风险LSD3=
+        0.25*协调风险LCO3R+0.25*环境风险LEN3R+0.25*社会风险LSO3R+0.25
+    *经济风险LEC3R
+    Units: Dmnl
+    
+(148)    团队人员经验和能力不足LCO3R4=
+        1.11
+    Units: Dmnl
+    
+(149)    团队人员能力素质不互补LCO3R2=
+        1.25
+    Units: Dmnl
+    
+(150)    团队内部矛盾冲突严重LCO3R5= INTEG (
+        RCO3R5,
+            1.03 
+            )
+    Units: Dmnl
+    
+(151)    固体废物污染LEN3R5= INTEG (
+        REN3R5,
+            2.46 
+            )
+    Units: Dmnl
+    
+(152)    土壤质量降低LEN3R10= INTEG (
+        REN3R10,
+            2.36 
+            )
+    Units: Dmnl
+    
+(153)    夜间光污染LEN3R3= INTEG (
+        REN3R3,
+            1.25 
+            )
+    Units: Dmnl
+    
+(154)    对当地就业情况不利影响LSO3R8= INTEG (
+        RSO3R8,
+            2.05 
+            )
+    Units: Dmnl
+    
+(155)    居民健康受到威胁LSO3R7= INTEG (
+        RSO3R7,
+            2.4 
+            )
+    Units: Dmnl
+    
+(156)    居民安全受到威胁LSO3R6= INTEG (
+        RSO3R6,
+            2.4 
+            )
+    Units: Dmnl
+    
+(157)    工期延误LEC3R2= INTEG (
+        REC3R2,
+            2.58 
+            )
+    Units: Dmnl
+    
+(158)    工程质量不合格LEC3R3= INTEG (
+        REC3R3,
+            2.81 
+            )
+    Units: Dmnl
+    
+(159)    废气排放污染LEN3R1= INTEG (
+        REN3R1,
+            2.81 
+            )
+    Units: Dmnl
+    
+(160)    废水排放污染LEN3R2= INTEG (
+        REN3R2,
+            2.36 
+            )
+    Units: Dmnl
+    
+(161)    建安成本超支LEC3R1= INTEG (
+        REC3R1,
+            2.81 
+            )
+    Units: Dmnl
+    
+(162)    建筑垃圾处置成本超支LEC3R4= INTEG (
+        REC3R4,
+            1.87 
+            )
+    Units: Dmnl
+    
+(163)    引起地质灾害LEN3R13= INTEG (
+        REN3R13,
+            2.81 
+            )
+    Units: Dmnl
+    
+(164)    影响当地企业正常生产经营LEC3R5= INTEG (
+        REC3R5,
+            2.1 
+            )
+    Units: Dmnl
+    
+(165)    打破生态平衡功能LEN3R12= INTEG (
+        REN3R12,
+            2.81 
+            )
+    Units: Dmnl
+    
+(166)    扰乱当地居民正常生活LSO3R9= INTEG (
+        RSO3R9,
+            2.04 
+            )
+    Units: Dmnl
+    
+(167)    施工噪声污染LEN3R4= INTEG (
+        REN3R4,
+            1.88 
+            )
+    Units: Dmnl
+    
+(168)    施工对当地自然景观遗产破坏LEN3R11= INTEG (
+        REN3R11,
+            2.81 
+            )
+    Units: Dmnl
+    
+(169)    施工对方地文化遗产破坏LSO3R1= INTEG (
+        RSO3R1,
+            2.32 
+            )
+    Units: Dmnl
+    
+(170)    施工方与当地公众不协调LSO3R12= INTEG (
+        RSO3R12,
+            1.24 
+            )
+    Units: Dmnl
+    
+(171)    施工材料消耗过量LEN3R7= INTEG (
+        REN3R7,
+            1.88 
+            )
+    Units: Dmnl
+    
+(172)    施工现场发生安全事故LSO3R4= INTEG (
+        RSO3R4,
+            2.81 
+            )
+    Units: Dmnl
+    
+(173)    环境风险LEN3R= INTEG (
+        SMOOTH(REN3R, 3),
+            0)
+    Units: Dmnl
+    
+(174)    社会风险LSO3R= INTEG (
+        SMOOTH(RSO3R, 3),
+            0)
+    Units: Dmnl
+    
+(175)    经济风险LEC3R= INTEG (
+        SMOOTH(REC3R, 3),
+            0)
+    Units: Dmnl
+    
+(176)    能源消耗过量LEN3R8= INTEG (
+        REN3R8,
+            2.7 
+            )
+    Units: Dmnl
+    
+(177)    贿赂和腐败LSO3R2= INTEG (
+        RSO3R2,
+            1.11 
+            )
+    Units: Dmnl
+    
+(178)    过度的行政干预LSO3R3= INTEG (
+        RSO3R3,
+            1.05 
+            )
+    Units: Dmnl
+    
+(179)    项目人员健康受到威胁LSO3R5= INTEG (
+        RSO3R5,
+            2.44 
+            )
+    Units: Dmnl
+    
+(180)    项目参与者间沟通协调不足LCO3R1= INTEG (
+        RCO3R1,
+            1.25 
+            )
+    Units: Dmnl
+    
+(181)    项目周边便利设施不足LSO3R10=
+        1.11
+    Units: Dmnl
+    
+（4）港珠澳大桥运营阶段
+(001)    "CCO4R1-CO4R2"=
+        0.169
+    Units: Dmnl/Month
+    
+(002)    "CCO4R2-CO4R3"=
+        0.113
+    Units: Dmnl/Month
+    
+(003)    "CCO4R3-CO4R1"=
+        0.216
+    Units: Dmnl/Month
+    
+(004)    "CCO4R3-SO4R4"=
+        0.105
+    Units: Dmnl/Month
+    
+(005)    "CCO4R4-CO4R2"=
+        0.193
+    Units: Dmnl/Month
+    
+(006)    "CCO4R4-CO4R3"=
+        0.152
+    Units: Dmnl/Month
+    
+(007)    "CEC4R1-EN4R1"=
+        0.125
+    Units: Dmnl/Month
+    
+(008)    "CEC4R1-EN4R2"=
+        0.125
+    Units: Dmnl/Month
+    
+(009)    "CEC4R1-EN4R3"=
+        0.082
+    Units: Dmnl/Month
+    
+(010)    "CEC4R1-EN4R6"=
+        0.133
+    Units: Dmnl/Month
+    
+(011)    "CEC4R1-EN4R7"=
+        0.17
+    Units: Dmnl/Month
+    
+(012)    "CEC4R2-SO4R1"=
+        0.101
+    Units: Dmnl/Month
+    
+(013)    "CEC4R2-SO4R5"=
+        0.091
+    Units: Dmnl/Month
+    
+(014)    "CEC4R2-SO4R6"=
+        0.141
+    Units: Dmnl/Month
+    
+(015)    "CEC4R3-CO4R1"=
+        0.058
+    Units: Dmnl/Month
+    
+(016)    "CEC4R3-CO4R4"=
+        0.074
+    Units: Dmnl/Month
+    
+(017)    "CEC4R3-EC4R1"=
+        0.204
+    Units: Dmnl/Month
+    
+(018)    "CEC4R4-EC4R1"=
+        0.254
+    Units: Dmnl/Month
+    
+(019)    "CEC4R4-EC4R3"=
+        0.3
+    Units: Dmnl/Month
+    
+(020)    "CEC4R5-EC4R2"=
+        0.177
+    Units: Dmnl/Month
+    
+(021)    "CEC4R5-EC4R4"=
+        0.177
+    Units: Dmnl/Month
+    
+(022)    "CEC4R5-SO4R6"=
+        0.183
+    Units: Dmnl/Month
+    
+(023)    "CEN4R1-CO4R4"=
+        0.115
+    Units: Dmnl/Month
+    
+(024)    "CEN4R2-CO4R4"=
+        0.115
+    Units: Dmnl/Month
+    
+(025)    "CEN4R3-CO4R4"=
+        0.13
+    Units: Dmnl/Month
+    
+(026)    "CEN4R4-CO4R4"=
+        0.11
+    Units: Dmnl/Month
+    
+(027)    "CEN4R5-CO4R4"=
+        0.103
+    Units: Dmnl/Month
+    
+(028)    "CEN4R6-CO4R4"=
+        0.092
+    Units: Dmnl/Month
+    
+(029)    "CEN4R7-EN4R1"=
+        0.119
+    Units: Dmnl/Month
+    
+(030)    "CEN4R7-EN4R2"=
+        0.119
+    Units: Dmnl/Month
+    
+(031)    "CEN4R7-EN4R3"=
+        0.118
+    Units: Dmnl/Month
+    
+(032)    "CEN4R7-EN4R4"=
+        0.125
+    Units: Dmnl/Month
+    
+(033)    "CEN4R7-EN4R5"=
+        0.127
+    Units: Dmnl/Month
+    
+(034)    "CEN4R7-EN4R6"=
+        0.127
+    Units: Dmnl/Month
+    
+(035)    "CSO4R1-SO4R2"=
+        0.199
+    Units: Dmnl/Month
+    
+(036)    "CSO4R1-SO4R4"=
+        0.061
+    Units: Dmnl/Month
+    
+(037)    "CSO4R1-SO4R8"=
+        0.144
+    Units: Dmnl/Month
+    
+(038)    "CSO4R2-EN4R1"=
+        0.118
+    Units: Dmnl/Month
+    
+(039)    "CSO4R2-EN4R2"=
+        0.118
+    Units: Dmnl/Month
+    
+(040)    "CSO4R2-EN4R3"=
+        0.155
+    Units: Dmnl/Month
+    
+(041)    "CSO4R2-EN4R4"=
+        0.164
+    Units: Dmnl/Month
+    
+(042)    "CSO4R2-SO4R4"=
+        0.053
+    Units: Dmnl/Month
+    
+(043)    "CSO4R2-SO4R8"=
+        0.127
+    Units: Dmnl/Month
+    
+(044)    "CSO4R3-EC4R5"=
+        0.145
+    Units: Dmnl/Month
+    
+(045)    "CSO4R4-CO4R2"=
+        0.06
+    Units: Dmnl/Month
+    
+(046)    "CSO4R4-CO4R4"=
+        0.081
+    Units: Dmnl/Month
+    
+(047)    "CSO4R5-EN4R7"=
+        0.074
+    Units: Dmnl/Month
+    
+(048)    "CSO4R5-SO4R4"=
+        0.093
+    Units: Dmnl/Month
+    
+(049)    "CSO4R5-SO4R7"=
+        0.092
+    Units: Dmnl/Month
+    
+(050)    "CSO4R6-SO4R4"=
+        0.081
+    Units: Dmnl/Month
+    
+(051)    "CSO4R6-SO4R5"=
+        0.129
+    Units: Dmnl/Month
+    
+(052)    "CSO4R7-SO4R4"=
+        0.12
+    Units: Dmnl/Month
+    
+(053)    "CSO4R8-EC4R5"=
+        0.087
+    Units: Dmnl/Month
+    
+(054)    "CSO4R8-EN4R1"=
+        0.096
+    Units: Dmnl/Month
+    
+(055)    "CSO4R8-EN4R2"=
+        0.096
+    Units: Dmnl/Month
+    
+(056)    "CSO4R8-SO4R4"=
+        0.087
+    Units: Dmnl/Month
+    
+(057)    "CSO4R8-SO4R5"=
+        0.137
+    Units: Dmnl/Month
+    
+(058)    FINAL TIME=
+        72
+    Units: Month
+    The final time for the simulation.
+
+(059)    INITIAL TIME  = 0
+    Units: Month
+    The initial time for the simulation.
+
+(060)    RCO4R=
+        SMOOTH(DELAY3((项目可持续监督制度不合理LCO4R2+项目可持续监督维护主体不明确LCO4R1
+    +项目可持续监督维护平台建设差LCO4R4+项目可持续监督维护组织架构不合理LCO4R3
+    )/4,3),4)
+    Units: Dmnl/Month
+    
+(061)    RCO4R1=
+        公众和当地社区参与受阻LSO4R4*"CCO4R1-CO4R2"
+    Units: Dmnl/Month
+    
+(062)    RCO4R2=
+        项目可持续监督维护组织架构不合理LCO4R3*"CCO4R2-CO4R3"
+    Units: Dmnl/Month
+    
+(063)    RCO4R3=
+        "CCO4R3-CO4R1"*项目可持续监督维护主体不明确LCO4R1+"CCO4R3-SO4R4"
+    *公众和当地社区参与受阻LSO4R4
+    Units: Dmnl/Month
+    
+(064)    RCO4R4=
+        项目可持续监督制度不合理LCO4R2*"CCO4R4-CO4R2"+项目可持续监督维护组织架构不合理LCO4R3
+    *"CCO4R4-CO4R3"
+    Units: Dmnl/Month
+    
+(065)    REC4R=
+        SMOOTH(DELAY3((对当地经济贡献、拉动不足LEC4R5+居民资产贬值LEC4R2
+    +生态系统修复成本超支LEC4R1+运营维护成本超支LEC4R3+项目偿债能力弱LEC4R4
+    )/5,3),5)
+    Units: Dmnl/Month
+    
+(066)    REC4R1=
+        使用大量不可再生能源LEN4R6*"CEC4R1-EN4R6"+废气排放污染LEN4R1
+    *"CEC4R1-EN4R1"+废水排放污染LEN4R2*"CEC4R1-EN4R2"+打破生态平衡功能LEN4R7
+    *"CEC4R1-EN4R7"+运营噪声污染LEN4R3*"CEC4R1-EN4R3"
+    Units: Dmnl/Month
+    
+(067)    REC4R2=
+        对当地就业情况不利影响LSO4R6*"CEC4R2-SO4R6"+居民（人身、财产）安全受威胁LSO4R1
+    *"CEC4R2-SO4R1"+当地居民丧失享有公共资源的权益LSO4R5*"CEC4R2-SO4R5"
+    Units: Dmnl/Month
+    
+(068)    REC4R3=
+        生态系统修复成本超支LEC4R1*"CEC4R3-EC4R1"+项目可持续监督维护主体不明确LCO4R1
+    *"CEC4R3-CO4R1"+项目可持续监督维护平台建设差LCO4R4*"CEC4R3-CO4R4"
+    Units: Dmnl/Month
+    
+(069)    REC4R4=
+        生态系统修复成本超支LEC4R1*"CEC4R4-EC4R1"+运营维护成本超支LEC4R3
+    *"CEC4R4-EC4R3"
+    Units: Dmnl/Month
+    
+(070)    REC4R5=
+        对当地就业情况不利影响LSO4R6*"CEC4R5-SO4R6"+居民资产贬值LEC4R2
+    *"CEC4R5-EC4R2"+项目偿债能力弱LEC4R4*"CEC4R5-EC4R4"
+    Units: Dmnl/Month
+    
+(071)    REN4R=
+        SMOOTH(DELAY3((使用大量不可再生能源LEN4R6+夜间光污染LEN4R4
+    +废气排放污染LEN4R1+废水排放污染LEN4R2+打破生态平衡功能LEN4R7
+    +资源使用过量LEN4R5+运营噪声污染LEN4R3)/7,3),7)
+    Units: Dmnl/Month
+    
+(072)    REN4R1=
+        项目可持续监督维护平台建设差LCO4R4*"CEN4R1-CO4R4"
+    Units: Dmnl/Month
+    
+(073)    REN4R2=
+        "CEN4R2-CO4R4"*项目可持续监督维护平台建设差LCO4R4
+    Units: Dmnl/Month
+    
+(074)    REN4R3=
+        项目可持续监督维护平台建设差LCO4R4*"CEN4R3-CO4R4"
+    Units: Dmnl/Month
+    
+(075)    REN4R4=
+        项目可持续监督维护平台建设差LCO4R4*"CEN4R4-CO4R4"
+    Units: Dmnl/Month
+    
+(076)    REN4R5=
+        项目可持续监督维护平台建设差LCO4R4*"CEN4R5-CO4R4"
+    Units: Dmnl/Month
+    
+(077)    REN4R6=
+        "CEN4R6-CO4R4"*项目可持续监督维护平台建设差LCO4R4
+    Units: Dmnl/Month
+    
+(078)    REN4R7=
+        使用大量不可再生能源LEN4R6*"CEN4R7-EN4R6"+夜间光污染LEN4R4
+    *"CEN4R7-EN4R4"+废气排放污染LEN4R1*"CEN4R7-EN4R1"+废水排放污染LEN4R2
+    *"CEN4R7-EN4R2"+资源使用过量LEN4R5*"CEN4R7-EN4R5"+运营噪声污染LEN4R3
+    *"CEN4R7-EN4R3"
+    Units: Dmnl/Month
+    
+(079)    RSO4R=
+        SMOOTH(DELAY3((公众和当地社区参与受阻LSO4R4+对当地就业情况不利影响LSO4R6
+    +居民健康受到威胁LSO4R2+居民（人身、财产）安全受威胁LSO4R1
+    +当地居民丧失享有公共资源的权益LSO4R5+扰乱当地居民的正常生活，生活质量降低LSO4R8
+    +贫富差距拉大LSO4R3+项目周边便利设施不足LSO4R7)/8,3),8)
+    Units: Dmnl/Month
+    
+(080)    RSO4R1=
+        公众和当地社区参与受阻LSO4R4*"CSO4R1-SO4R4"+居民健康受到威胁LSO4R2
+    *"CSO4R1-SO4R2"+扰乱当地居民的正常生活，生活质量降低LSO4R8
+    *"CSO4R1-SO4R8"
+    Units: Dmnl/Month
+    
+(081)    RSO4R2=
+        公众和当地社区参与受阻LSO4R4*"CSO4R2-SO4R4"+夜间光污染LEN4R4
+    *"CSO4R2-EN4R4"+废气排放污染LEN4R1*"CSO4R2-EN4R1"+废水排放污染LEN4R2
+    *"CSO4R2-EN4R2"+扰乱当地居民的正常生活，生活质量降低LSO4R8
+    *"CSO4R2-SO4R8"+运营噪声污染LEN4R3*"CSO4R2-EN4R3"
+    Units: Dmnl/Month
+    
+(082)    RSO4R3=
+        "CSO4R3-EC4R5"*对当地经济贡献、拉动不足LEC4R5
+    Units: Dmnl/Month
+    
+(083)    RSO4R4=
+        项目可持续监督制度不合理LCO4R2*"CSO4R4-CO4R2"+项目可持续监督维护平台建设差LCO4R4
+    *"CSO4R4-CO4R4"
+    Units: Dmnl/Month
+    
+(084)    RSO4R5=
+        公众和当地社区参与受阻LSO4R4*"CSO4R5-SO4R4"+打破生态平衡功能LEN4R7
+    *"CSO4R5-EN4R7"+项目周边便利设施不足LSO4R7*"CSO4R5-SO4R7"
+    Units: Dmnl/Month
+    
+(085)    RSO4R6=
+        当地居民丧失享有公共资源的权益LSO4R5*"CSO4R6-SO4R5"+公众和当地社区参与受阻LSO4R4
+    *"CSO4R6-SO4R4"
+    Units: Dmnl/Month
+    
+(086)    RSO4R7=
+        公众和当地社区参与受阻LSO4R4*"CSO4R7-SO4R4"
+    Units: Dmnl/Month
+    
+(087)    RSO4R8=
+        公众和当地社区参与受阻LSO4R4*"CSO4R8-SO4R4"+对当地经济贡献、拉动不足LEC4R5
+    *"CSO4R8-EC4R5"+废气排放污染LEN4R1*"CSO4R8-EN4R1"+废水排放污染LEN4R2
+    *"CSO4R8-EN4R2"+当地居民丧失享有公共资源的权益LSO4R5*"CSO4R8-SO4R5"
+    Units: Dmnl/Month
+    
+(088)    SAVEPER  = 
+            TIME STEP
+    Units: Month [0,?]
+    The frequency with which output is stored.
+
+(089)    TIME STEP  = 1
+    Units: Month [0,?]
+    The time step for the simulation.
+
+(090)    使用大量不可再生能源LEN4R6= INTEG (
+        REN4R6,
+            2.6 
+            )
+    Units: Dmnl
+    
+(091)    公众和当地社区参与受阻LSO4R4= INTEG (
+        RSO4R4,
+            0.67 
+            )
+    Units: Dmnl
+    
+(092)    协调风险LCO4R= INTEG (
+        SMOOTH(RCO4R,3),
+            0)
+    Units: Dmnl
+    
+(093)    可持续视角下项目运营阶段整体风险LSD4=
+        0.25*协调风险LCO4R+0.25*环境风险LEN4R+0.25*社会风险LSO4R+0.25
+    *经济风险LEC4R
+    Units: Dmnl
+    
+(094)    夜间光污染LEN4R4= INTEG (
+        REN4R4,
+            1.05 
+            )
+    Units: Dmnl
+    
+(095)    对当地就业情况不利影响LSO4R6= INTEG (
+        RSO4R6,
+            1.65 
+            )
+    Units: Dmnl
+    
+(096)    对当地经济贡献、拉动不足LEC4R5= INTEG (
+        REC4R5,
+            1.61 
+            )
+    Units: Dmnl
+    
+(097)    居民健康受到威胁LSO4R2= INTEG (
+        RSO4R2,
+            1.87 
+            )
+    Units: Dmnl
+    
+(098)    居民资产贬值LEC4R2= INTEG (
+        REC4R2,
+            1.96 
+            )
+    Units: Dmnl
+    
+(099)    居民（人身、财产）安全受威胁LSO4R1= INTEG (
+        RSO4R1,
+            1.78 
+            )
+    Units: Dmnl
+    
+(100)    废气排放污染LEN4R1= INTEG (
+        REN4R1,
+            2.42 
+            )
+    Units: Dmnl
+    
+(101)    废水排放污染LEN4R2= INTEG (
+        REN4R2,
+            1.9 
+            )
+    Units: Dmnl
+    
+(102)    当地居民丧失享有公共资源的权益LSO4R5= INTEG (
+        RSO4R5,
+            1.3 
+            )
+    Units: Dmnl
+    
+(103)    打破生态平衡功能LEN4R7= INTEG (
+        REN4R7,
+            2.6 
+            )
+    Units: Dmnl
+    
+(104)    扰乱当地居民的正常生活，生活质量降低LSO4R8= INTEG (
+        RSO4R8,
+            1.73 
+            )
+    Units: Dmnl
+    
+(105)    环境风险LEN4R= INTEG (
+        SMOOTH(REN4R, 3),
+            0)
+    Units: Dmnl
+    
+(106)    生态系统修复成本超支LEC4R1= INTEG (
+        REC4R1,
+            2.41 
+            )
+    Units: Dmnl
+    
+(107)    社会风险LSO4R= INTEG (
+        SMOOTH(RSO4R, 3),
+            0)
+    Units: Dmnl
+    
+(108)    经济风险LEC4R= INTEG (
+        SMOOTH(REC4R,3),
+            0)
+    Units: Dmnl
+    
+(109)    贫富差距拉大LSO4R3= INTEG (
+        RSO4R3,
+            1.17 
+            )
+    Units: Dmnl
+    
+(110)    资源使用过量LEN4R5= INTEG (
+        REN4R5,
+            2.09 
+            )
+    Units: Dmnl
+    
+(111)    运营噪声污染LEN4R3= INTEG (
+        REN4R3,
+            1.54 
+            )
+    Units: Dmnl
+    
+(112)    运营维护成本超支LEC4R3= INTEG (
+        REC4R3,
+            2.33 
+            )
+    Units: Dmnl
+    
+(113)    项目偿债能力弱LEC4R4= INTEG (
+        REC4R4,
+            2.11 
+            )
+    Units: Dmnl
+    
+(114)    项目可持续监督制度不合理LCO4R2= INTEG (
+        RCO4R2,
+            0.78 
+            )
+    Units: Dmnl
+    
+(115)    项目可持续监督维护主体不明确LCO4R1= INTEG (
+        RCO4R1,
+            0.71 
+            )
+    Units: Dmnl
+    
+(116)    项目可持续监督维护平台建设差LCO4R4= INTEG (
+        RCO4R4,
+            0.54 
+            )
+    Units: Dmnl
+    
+(117)    项目可持续监督维护组织架构不合理LCO4R3= INTEG (
+        RCO4R3,
+            0.67 
+            )
+    Units: Dmnl
+    
+(118)    项目周边便利设施不足LSO4R7= INTEG (
+        RSO4R7,
+            1.17 
+            )
+    Units: Dmnl
+
